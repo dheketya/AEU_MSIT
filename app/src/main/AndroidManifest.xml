@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AEU_App"
+        tools:targetApi="31">
+        <activity
+            android:name=".Converter.EurotokhrActivity"
+            android:exported="false"
+            android:parentActivityName=".Exchangepage"
+            />
+        <activity
+            android:name=".Converter.KhrtoeuroActivity"
+            android:exported="false"
+            android:parentActivityName=".Exchangepage"
+            />
+        <activity
+            android:name=".Converter.UsdtokhrActivity"
+            android:exported="false"
+            android:parentActivityName=".Exchangepage"
+            />
+        <activity
+            android:name=".Converter.KhrtousdActivity"
+            android:exported="false"
+            android:parentActivityName=".Exchangepage"
+            />
+        <activity
+            android:name=".Exchangepage"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
